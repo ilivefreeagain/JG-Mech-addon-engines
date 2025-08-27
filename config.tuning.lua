@@ -48,6 +48,17 @@
 -- minGameBuild               Functionality restricted to a certain game build, such as manual gearboxes
 -----------------------------------------------------------------------------------------------------------
 
+--fInitialDriveForce: This parameter dictates the initial force applied to the wheels when accelerating from a standstill. Increasing this value can lead to quicker launches and a more powerful initial acceleration.
+
+--fDriveInertia: This value influences how quickly the engine's rotational speed can change. A lower fDriveInertia generally means the engine revs up and down more quickly, potentially improving responsiveness.
+
+--fInitialDriveMaxFlatVel: This defines the maximum speed the vehicle can reach in its initial drive gear before further gear changes occur. Increasing this can allow the vehicle to hit higher speeds in lower gears.
+
+--Clutch-Related Scales: These are crucial for how smoothly gear shifts happen.
+
+--fClutchChangeRateScaleUpShift: This scale affects the speed at which the clutch engages during an upshift. A higher value generally means a faster, more aggressive upshift.
+--fClutchChangeRateScaleDownShift: Similarly, this scale influences the clutch engagement speed during a downshift. A higher value here can result in quicker, more responsive downshifts.
+
 Config.Tuning = {
   --
   -- ENGINE SWAPS
